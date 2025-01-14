@@ -222,7 +222,6 @@ body {
     margin-top: 2rem;
 }
 
-
 form {
     margin-top: 3rem;
     position: relative;
@@ -265,6 +264,14 @@ input {
 
 input:valid {
     border-color: rgb(21, 214, 21);
+}
+
+input[type=password] {
+    border-color: red;
+}
+
+input:focus {
+    border-color: rgb(47, 100, 200);
 }
 
 button[type=submit] {
