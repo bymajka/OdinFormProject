@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign-up form Odin</title>
+</head>
+
+<body>
+    <main>
+        <div class="main-content">
+            <div class="left-section">
+                <p><img class="logo-img" src="src/img/odin-lined-logo.png" alt="logo">ODIN</p>
+                <div class="credentials">
+                    <p>Photo by <a
+                            href="https://unsplash.com/photos/a-night-sky-filled-with-stars-and-clouds-j6HQqzKCyfc"
+                            target="_blank">Nir
+                            Himi</a> on <a href="https://unsplash.com/" target="_blank">Unsplash</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="right-section">
+                <p>This project is intended to give you a chance to flex some of the new items you’ve been absorbing
+                    over the past few lessons. This time it’s a sign-up <i>form</i> for an imaginary service.</p>
+                <p>You <i>know</i> you want to.</p>
+                <form action="imaginary-url">
+                    <h2>Let's do this!</h2>
+                    <div class="form-inputs">
+                        <fieldset>
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" name="first_name" id="first-name" minlength="2" required>
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email" required>
+                            <label for="password">PASSWORD</label>
+                            <input type="password" name="password" id="password" minlength="8" required>
+                        </fieldset>
+                        <fieldset>
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" name="last_name" id="last-name" minlength="2" required>
+                            <label for="phone-number">PHONE NUMBER</label>
+                            <input type="tel" name="phone_number" id="phone-number" required>
+                            <label for="confirm-password">CONFIRM PASSWORD</label>
+                            <input type="password" name="password" id="confirm-password" minlength="8" required>
+                        </fieldset>
+                    </div>
+                    <button type="submit">Create Account</button>
+                </form>
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

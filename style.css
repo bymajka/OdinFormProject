@@ -1,0 +1,283 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+:root {
+    --highlighted-text: 600;
+    --normal-text: 400;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+main {
+    height: 100%;
+}
+
+i {
+    font-style: italic;
+}
+
+body {
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    background-image: linear-gradient(to right, rgb(48, 48, 48), rgb(5, 5, 5));
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    margin: 0 7rem;
+    background-color: whitesmoke;
+}
+
+.left-section {
+    position: relative;
+    background: url("./src/img/nir-himi-j6HQqzKCyfc-unsplash.jpg") no-repeat;
+    background-size: cover;
+    height: 100%;
+    flex: 1;
+}
+
+.left-section>p {
+    margin-top: 10rem;
+    display: block;
+    font: 5rem 'Norse-Bold';
+    color: white;
+    background-color: rgba(0, 0, 0, 0.525);
+    line-height: 7rem;
+    text-align: center;
+    height: 8rem;
+}
+
+.credentials {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    width: 100%;
+}
+
+.credentials p {
+    text-align: center;
+}
+
+.credentials p a {
+    color: white;
+}
+
+.logo-img {
+    width: 5rem;
+    vertical-align: middle;
+}
+
+.right-section {
+    padding: 7rem 2rem;
+    flex: 2;
+    position: relative;
+}
+
+.right-section>p {
+    font-weight: 600;
+    line-height: 1.5rem;
+    max-width: 40rem;
+}
+
+.right-section p:nth-child(2) {
+    margin-top: 2rem;
+}
+
+.right-section p:last-child {
+    margin-top: 2rem;
+}
+
+
+form {
+    margin-top: 3rem;
+    position: relative;
+    background-color: white;
+    box-shadow: 0 5px 5px #999;
+    padding: 2rem;
+    width: 100%;
+    margin-left: -2rem;
+}
+
+.form-inputs {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    height: 10rem;
+}
+
+h2 {
+    font-weight: var(--highlighted-text);
+}
+
+fieldset {
+    width: 15rem;
+}
+
+label {
+    font-size: 0.5rem;
+    letter-spacing: 2px;
+    margin-top: 3rem;
+}
+
+input {
+    display: block;
+    width: 100%;
+    border: 2px solid #999;
+    border-radius: 0.2rem;
+    outline: none;
+}
+
+input:valid {
+    border-color: rgb(21, 214, 21);
+}
+
+button[type=submit] {
+    width: 12rem;
+    border-radius: 0.8rem;
+    height: 2.5rem;
+    background-image: linear-gradient(to bottom, rgb(157, 128, 254), rgb(47, 13, 83));
+    border: none;
+    outline-style: none;
+    color: white;
+}
+
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url(./src/fonts/Norse-Bold.otf);
+}
